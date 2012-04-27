@@ -1,0 +1,32 @@
+# Create your views here.
+form django.http import HttpResponseRedirect
+from django.contrib.auth.models import User
+from django.shortcuts import render_to_response
+from django.template import RequestContext
+from drinker.forms import RegistrationForm
+
+def DrinkerRegistration(request):
+    if request.user.is_authenticated():
+        return HttpResponseRedirect('/profile/') # if already registered go to profile
+    if request.method == 'POST':
+            # someone submits form back
+            form = RegistrationForm(request.POST) 
+            if form.is_valid(): # custom cleaning
+                user = User.objects.create_user(username=form.cleaned_data['username'], email = form.cleaned_data['email'], password = form.cleaned_data['password'])
+                            user.save() # provide user object
+                            drinker = user.get_profile # auth profile module
+                            drinker.name = form.cleaned_data['name']
+                            drinker.birthday = form.cleaned_data['birthday']
+                            drinker.save()
+                            return HttpResponseRedirect('/profile/')
+            else:
+                return render_to_response('register.html', {'form': form}, context_instance=RequestContext(request))    
+
+
+    # shows the form
+    else: 
+            '''user is not submitting the form.show them a blank registration form '''
+            form = RegistrationForm()
+            context = {'form': form}
+            return render_to_response('register.html', contect, context_instance=RequestContext(request))
+    

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+ 
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <title>CareSquare Beta</title>
+</head>
+ 
+<body>
+
+<div class="container">
+    <h1>Care Architecture Beta</h1>
+    <hr />
+
+<div class="header">
+{% if not user.is_authenticated %}<a href="/accounts/login/?next=/forum/">login</a> | <a href="/accounts/register/">register</a>{% endif %}
+
+{% if user.is_authenticated %}<a href="/accounts/logout/?next=/forum/">logout</a {% endif %}
+
+{% if user.is_authenticated %}
+    <a href="{% url forum.views.profile user.pk %}">Edit profile</a> {% endif %}
+</div>
+
+    <!-- Blog Posts -->
+    <div class="blogposts">
+    {% for post in posts %}
+        <div class="post">
+        <h2>{{ post.title }}</h2>
+        <h3>Posted on {{ post.timestamp }} by {{ post.author }}</h3>
+        <p>{{ post.bodytext }}</p>
+        </div>
+
+        <hr />
+    {% endfor %}
+    </div>
+
+    <!-- Forums  -->
+    <div id="list">
+    <table border="0" cellpadding="4" width="100%">
+        <tr>
+            <td></td>
+            <td>Posts</td>
+            <td>Last post</td>
+            <td></td>
+        </tr>
+
+        {% for forum in forums %}
+        <tr>
+            <td {% if forloop.last %}class="last"{% endif %}>
+            <div class="title"> <a href="{% url forum.views.forum forum.pk %}">{{ forum.title }}</a>
+                </div></td>
+            <td {% if forloop.last %}class="last"{% endif %}>{{ forum.num_posts }}</td>
+            <td {% if forloop.last %}class="last"{% endif %}>
+                {{ forum.last_post.short|linebreaksbr }}</td>
+            <td {% if forloop.last %}class="last"{% endif %}>
+                <a class="button" href="{% url forum.views.forum forum.pk %}">VIEW</a>
+            </td>
+        </tr>
+
+        {% endfor %}
+    </div> 
+
+</div>
+ 
+</body>
+ 
+</html>

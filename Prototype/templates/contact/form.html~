@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Request a Ride</title>
+	
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<h1>Request a Ride</h1>
+<form action="{% url contact_form %}" method="post" id="contactform">
+    <div id="ajaxwrapper">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    {{ form.as_p }}
+    <p id="sendwrapper"><input type="submit" value="Send" id="sendbutton"/></p>
+    </div>
+</form>
+
+
+
+<script src="jquery-1.7.2.min.js"></script>
+<script>
+  (function($) { $(function() {
+        var form = jQuery("#contactform");
+              form.submit(function(e) {
+                  jQuery("#sendbutton").attr('disabled', true)
+                  jQuery("#sendwrapper").prepend('<span>Sending message, please wait... </span>')
+                  jQuery("#ajaxwrapper").load(
+                      form.attr('action') + ' #ajaxwrapper',
+                      form.serializeArray(),
+                      function(responseText, responseStatus) {
+                          jQuery("#sendbutton").attr('disabled', false)
+                      }
+                  );
+                  e.preventDefault(); 
+              });
+  }) })(jQuery);
+</script>
+</body>
+</html>
+

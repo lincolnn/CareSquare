@@ -1,0 +1,37 @@
+#AboutLeft {
+    position: fixed;
+    top: 82px;
+    text-align: right;	
+}
+
+#AboutLeft li a {
+    font-size: 18px;
+    line-height: 2em;
+    font-weight: 300;
+    color: black;
+}
+
+#AboutRight {
+    width: 620px;
+    margin-left: 228px;
+    margin-top: 75px;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+/*** Top of Page Button ***/
+#top-link {
+    display: none;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    color: green;
+    background: Lightgreen;
+    padding: 10px;
+}
+
+#signup {
+    margin-top: 75px;
+}

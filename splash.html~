@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Care Architecture - About Us</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Styles -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="bootstrap-1.1.1.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">>
+    <link href="assets/css/carousel.css" rel="stylesheet">
+
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- Scripts: inc. TableSorter -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+
+    <script src="http://autobahn.tablesorter.com/jquery.tablesorter.min.js"></script>
+    <script src="assets/js/prettify.js"></script>
+    <script src="assets/js/application.js"></script>
+  </head>
+
+  <body>
+
+
+    <!-- The top navigation menu -->
+   <div class="topbar">
+    <div class="fill">
+        <div class="container">
+            <h3><a href="/">CareSquare 0.1</a></h3>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="request-a-ride.html">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+          </ul>
+          <ul class="nav secondary-nav">
+            <li><a href="signup.html" class="">Signup</a><li>
+            <li class="menu">
+                <a href="mm1-view.html" class="dropdown-toggle" data-toggle="dropdown">
+                          Login
+                          <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+		            <form action="mm1-view.html" method="post">
+			            <div class="formLine"><input class="textInput" type="text" name="username" placeholder="Username" /></div>
+			            <div class="formLine"><input class="textInput" type="password" name="password" placeholder="Password"/></div>
+			            <div class="formLine"><input class="vui-button" type="submit" name="submit" value="Login" style="float: right;"/><input type="checkbox" name="remember" id="remember"> <label for="remember">Remember me</label></div>
+			            <div class="formLine" style="text-align: center;"><a style="color: #bbb;" href="#">I forgot my password</a></div>
+		            </form>
+                </ul>
+            </li>
+          </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+        <div class="hero-unit">
+        <div class="row">
+            <div class="span7" id="top_left">
+                <div class="image quote rounded">
+                <div class="inner"><p>There are 42 million Americans over the age of 65. 10,000 people join them every single day.</p></div>
+                </div>
+            </div>
+            <div class="span7" id="top_right">
+            <div class="inner"><p>More than 80% of them want to stay in their homes and remain independent. 
+            </p>
+            </div>
+            </div>
+            <div class="span7" id="bottom_left">
+            <div class="inner"><p>To do this, they need support, services, and community. They need a village. 
+            </p></div>
+            </div>
+            <div class="span7" id="bottom_right">
+            <div class="inner"><p>They need CareSquare. 
+            </p></div>
+            </div>
+        </div>
+ <p>CareSquare. Coming soon from Care Architecture. <a href="mailto:support@carearchitecture.com">Email us</a> for more information.</p>
+        </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span11">
+        </div>
+        
+        <!-- This begins the second column -->
+        <div class="span5">
+          <h3>Follow Us:</h3>
+        <span>
+        <a href="#"><img src="images/facebook.png"></a>
+        </span>
+        <span>
+        <a href="#"><img src="images/twitter.png"></a>
+        </span>
+        <span>
+        <a href="#"><img src="images/rss.png"></a>
+        </span>
+       </div>
+      </div>
+
+    <!-- Footer -->
+      <footer>
+        <p>&copy; CareSquare 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script src="assets/js/bootstrap-carousel.js"></script>
+
+  </body>
+</html>

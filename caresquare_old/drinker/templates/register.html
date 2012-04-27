@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="" method="post">
+{% csrf_token %}
+{% if form.errors %}}<p>Please correct the following fields:</p>{% endif %}
+{{ form }}
+<div class="register_div">
+    {% if form.username.errors %}<p class="error">{{ form.username.errors }}</p> {% endif %} 
+    <p>label for="username"{% if form.username.errors %} class="error"{% endif %}Username:</label></p>
+    <p>{{ form.username }}</p>
+</div>
+<div class="register_div">
+    {% if form.email.errors %}<p class="error">{{ form.email.errors }} </p>{% endif %}
+    <p>label for="email"{% if form.email.errors %} class="error"{% endif %}Email:</label></p>
+    <p>{{ form.email }}</p>    
+</div>
+
+<p><input type="submit" alt="register" /></p>
+</form>
+{% endblock %}

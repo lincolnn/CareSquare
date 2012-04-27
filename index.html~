@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Care Architecture - About Us</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Styles -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!--<link href="bootstrap-1.1.1.css" rel="stylesheet">-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/carousel.css" rel="stylesheet">
+
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- Scripts: inc. TableSorter -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+
+    <script src="http://autobahn.tablesorter.com/jquery.tablesorter.min.js"></script>
+    <script src="assets/js/prettify.js"></script>
+    <script src="assets/js/application.js"></script>
+  </head>
+
+  <body>
+    <!-- The top navigation menu -->
+   <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav">
+                <li><img src="assets/img/EskatonLogo.png" width="280" height="80" /></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="request-a-ride.html">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+          </ul>
+          <ul class="nav pull-right">
+            <li><a href="signup.html" class="">Signup</a><li>
+            <li class="menu">
+                <a href="mm1-view.html" class="dropdown-toggle" data-toggle="dropdown">
+                          Login
+                          <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+		            <form action="mm1-view.html" method="post">
+			            <div class="formLine"><input class="textInput" type="text" name="username" placeholder="Username" /></div>
+			            <div class="formLine"><input class="textInput" type="password" name="password" placeholder="Password"/></div>
+			            <div class="formLine"><input class="vui-button" type="submit" name="submit" value="Login" style="float: right;"/><input type="checkbox" name="remember" id="remember"> <label for="remember">Remember me</label></div>
+			            <div class="formLine" style="text-align: center;"><a style="color: #bbb;" href="#">I forgot my password</a></div>
+		            </form>
+                </ul>
+            </li>
+          </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container-fluid">
+        <div class="hero-unit">
+        <div class="row">
+            <div class="span6">
+            <h2>Welcome to Eskaton's Live Well at Home Online!</h2>
+            <p>You can Check In, Request a Ride, and get Information on Services and Activities through Live Well at Home!<br />
+            <a href="mm1-view.html">Login</a> | <a href="#">Learn More</a></p>
+            <p><a href="signup.html"><button class="btn btn-large btn-primary">Get Started Here &raquo;</button></a></p>
+            </div>
+            <div class="span6">
+
+<!-- Carousel http://getkirby.com/blog/bootstrap-carousel-->
+<div id="myCarousel" class="carousel">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="item active">
+        <img src="assets/img/SS4.png" alt="" height="420" width="480" />
+        <div class="carousel-caption">
+        <p>"A community that you don't have to live in or work in. A community with benefits."</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="assets/img/sshot4.png" alt="" height="420" width="520" /> 
+        <div class="carousel-caption">      
+        <p>"The concierge service does all the legwork for you and provides reliable sources."</p>    
+        </div>
+    </div>
+    <div class="item">
+        <img src="assets/img/sshot5.png" alt="" height="420" width="520" /> 
+        <div class="carousel-caption">      
+        <p>"The concierge service does all the legwork for you and provides reliable sources."</p>    
+        </div>
+    </div>
+    <div class="item">
+        <img src="assets/img/sshot6.png" alt="" height="420" width="520" />  
+        <div class="carousel-caption">
+        <p>"Fills the potholes in the road of life. Holes that you are likely to experience as we age."</p>   
+        </div>    
+    </div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+</p>
+            </div>
+        </div>
+        </div>
+  
+      <!-- Example row of columns -->
+      <div class="row">        
+        <!-- This begins the second column -->
+        <div class="span5">
+          <h3>Follow Us:</h3>
+        <span>
+        <a href="#"><img src="assets/img/facebook-32x32.png"></a>
+        </span>
+        <span>
+        <a href="#"><img src="assets/img/twitter-32x32.png"></a>
+        </span>
+        <span>
+        <a href="#"><img src="assets/img/plus-32x32.png"></a>
+        </span>
+       </div>
+      </div>
+
+    <!-- Footer -->
+      <footer>
+        <p>&copy; CareSquare 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script src="assets/js/bootstrap-carousel.js"></script>
+
+  </body>
+</html>
