@@ -1,3 +1,7 @@
+# coding=utf-8
+import os.path
+import sys
+
 # Django settings for CareSquareBeta project.
 
 DEBUG = True
@@ -92,6 +96,13 @@ TEMPLATE_LOADERS = (
 #     'django.template.loaders.eggs.Loader',
 )
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.auth',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.request',
+    'django.core.context_processors.static',
+)
+
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -105,10 +116,29 @@ ROOT_URLCONF = 'CareSquareBeta.urls'
 TEMPLATE_DIRS = (
     "blog/templates",
     "registration/templates",
+    "templates",
+    os.path.join(os.path.dirname(__file__),'templates').replace('\\','/'),
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.request',
+    'django.core.context_processors.static',
+) 
+
+#from YT VIDEO on User Auth
+# URL for @login_requred decorator to use
+LOGIN_URL = '/login/'
+
+# redirect authenticated users
+LOGIN_REDIRECT_URL = '/profile/'
+
+# provide our get_profile()
+AUTH_PROFILE_MODULE = 'drinker.Drinker'
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -118,11 +148,16 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'CareSquareBeta.blog',
-    # Uncomment the next line to enable the admin:
     'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
+
     'registration',
+    'contact_form',
+    #'checkin',
+    #'forum',
+    #'poll',
+    #'drinker',
+    'beer',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -149,3 +184,9 @@ LOGGING = {
 }
 
 ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window; you may, of course, use a different value.
+
+EMAIL_HOST = 'smtp.carearchitecture.com'
+EMAIL_HOST_USER = 'lincoln@carearchitecture.com'
+EMAIL_HOST_PASSWORD = 'CareArchitecture1'
+EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

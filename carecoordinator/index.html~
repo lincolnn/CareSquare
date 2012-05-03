@@ -51,7 +51,7 @@
                 <li><a href="#">Contact Us</a></li>
           </ul>
           <ul class="nav secondary-nav">
-            <li><a href="signup.html" class="">Signup</a><li>
+            <li><a href="registration.html" class="">Signup</a><li>
             <li class="menu">
                 <a href="home.html" class="dropdown-toggle" data-toggle="dropdown">
                           Login

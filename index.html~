@@ -30,8 +30,8 @@
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-transition.js"></script>
     <script src="assets/js/bootstrap-dropdown.js"></script>
-
-    <script src="http://autobahn.tablesorter.com/jquery.tablesorter.min.js"></script>
+    <script src="assets/js/jquery.tablesorter/jquery.tablesorter.js"></script>
+    <!--<script src="http://autobahn.tablesorter.com/jquery.tablesorter.min.js"></script>-->
     <script src="assets/js/prettify.js"></script>
     <script src="assets/js/application.js"></script>
   </head>
@@ -40,12 +40,12 @@
     <!-- The top navigation menu -->
    <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
-        <div class="container">
+        <div class="container-fluid">
             <ul class="nav">
-                <li><img src="assets/img/EskatonLogo.png" width="280" height="80" /></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html"><img src="assets/img/EskatonLogo.png" /></a></li>
+                <!--<li><a href="about.html">About Us</a></li>
                 <li><a href="request-a-ride.html">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Contact Us</a></li>-->
           </ul>
           <ul class="nav pull-right">
             <li><a href="signup.html" class="">Signup</a><li>
@@ -86,7 +86,6 @@
     <div class="item active">
         <img src="assets/img/SS4.png" alt="" height="420" width="480" />
         <div class="carousel-caption">
-        <p>"A community that you don't have to live in or work in. A community with benefits."</p>
         </div>
     </div>
     <div class="item">

@@ -1,0 +1,15 @@
+from django.contrib import admin
+from beer.models import Beer, Brewery # from checkin.models import Member, CareCoordinator, Checkin
+
+class BeerAdmin(admin.ModelAdmin): # additional class to auto populate slug
+        prepopulated_fields = {'slug': ('name',)}
+        list_display = ('name', 'brewery', 'locality') # shows 3 rows in Beer admin
+        search_fields = ['name']
+
+class BreweryAdmin(admin.ModelAdmin):
+        prepopulated_fields = {'slug': ('name',)}
+
+admin.site.register(Beer, BeerAdmin) #(Member)
+admin.site.register(Brewery, BreweryAdmin) #(CareCoordinator)
+
+

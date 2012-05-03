@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div id="memberslist">
+       <h2>Member who rated : {{ members.0.rating }}    </h2>
+	 {% for member in members %}
+        {{ member }}
+        {% endfor %}
+    </div>
+{% endblock %}

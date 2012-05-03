@@ -1,0 +1,19 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/video1.css" />
+    {% block extrahead %}{% endblock %}  
+</head>
+<body>
+<!-- shows up everywhere extended -->
+<div id="header">
+    <div id="navbar">
+    main site navigation here
+    </div>
+</div>
+
+<div id="pageContainer">
+    {% block content %}
+    {% endblock %}
+</div>    
+</body>
+</html>

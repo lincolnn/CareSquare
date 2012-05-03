@@ -1,0 +1,14 @@
+.dps_poll_content{{ poll.pk }} {background-color: #0B9D0B; padding: 3px;}
+.dps_poll_content_header {font-variant: small-caps;}
+.dps_poll_userspace {float: left; width: 100%; text-align: right;}
+.dps_poll_title {color: #b10000; font-variant: small-caps; text-decoration: underline;}
+.dps_poll_warning_message {color: #f88885;}
+
+.dps_poll_body {background-color: #00BC00; padding: 10px 10% 3px 20px; clear: both; border-bottom: 3px solid #006600; border-left: 1px solid #005500;}
+
+.dps_poll_max_bar {display: block; padding: 5px; border-bottom: 2px solid #444; border-left: 1px solid #222; background-color: red;}
+.dps_poll_normal_bar {display: block; padding: 5px; border-bottom: 2px solid #444; border-left: 1px solid #222; background-color: white;}
+
+.dps_poll_item_dl {clear: both; width: 100%;}
+.dps_poll_voters_count {text-align: right; border-top: 2px solid #333; margin: 25px; padding-top: 4px;}
+.dps_poll_total {font-size: 1.5em;}

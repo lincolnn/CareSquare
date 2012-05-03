@@ -2,18 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Daily Checkin</title>
+    <title>Member Square One</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
+    <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/FontAwesome/css/font-awesome.css" rel="stylesheet">
+    <link href="fisheye/fisheye-menu.css" rel="stylesheet">
 
     <style type="text/css">
       body {
-        padding-top: 60px;
+        padding-top: 100px;
         padding-bottom: 40px;
       }
       .sidebar-nav {
@@ -38,120 +40,77 @@
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container-fluid">
+        <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="index.html">CareSquare Beta</a>
+
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="mm1-view.html"><img src="assets/img/EskatonLogo.png" /></a></li>  
             </ul>
-            <p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>
+            <p class="navbar-text pull-right">Logged in as <a href="#">SARAH</a></p>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container">
       <div class="row-fluid">
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header"><i class="icon-user"></i>SARAH</li>
-              <li class="active"><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="nav-header"><i class="icon-list-alt"></i>Summary Info</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="nav-header"><i class="icon-envelope"></i>Compose/Send Message</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+              <li class="nav-header"><i class="icon-user"></i>Hello, SARAH</li>
+
+    <div class="fisheye">
+    <ul id="fisheye_menu">
+		    <li><a href="daily-checkin.html" class="fisheye"><img src="fisheye/images/tick.png" alt="" /><span>Check In Each Day</span></a></li> 
+		    <li><a href="request-a-ride.html" class="fisheye"><img src="fisheye/images/CarGrey.png" alt="" /><span>Request a Ride</span></a></li> 
+		    <li><a href="service-directory.html" class="fisheye"><img src="fisheye/images/info.png" alt="" /><span>Service Directory</span></a></li> 
+		    <li><a href="activity-calendar.html" class="fisheye"><img src="fisheye/images/calendar.png" alt="" /><span>Activity Calendar</span></a></li> 
+    </ul>
+    </div>
+            <div class="alert">
+              <button class="close" data-dismiss="alert">×</button>
+              <strong>Checkin Due!</strong> Please do your daily checkin.
+            </div>              
+              <li class="nav-header"><a href="#">Request a Ride</a></li>
+              <li class="nav-header"><a href="#">Services</a></li>
+<li class="nav-header"><a href="#">Activities Calendar</a></li>
             </ul>
+
           </div><!--/.well -->
         </div><!--/span-->
+
         <div class="span9">
           <div class="hero-unit">
-            <h2>Daily Checkin</h2>
-            <h3>Thursday, March 22</h3>
-            <p>Hello Sarah!</p>
-<div class="progress progress-striped active">
-  <div class="bar"
-       style="width: 40%;"></div>
-</div>
-
+<h3>How are you feeling today?</h3>
         <div class="control-group">
 
-            <label class="control-label" for="inlineCheckboxes"><h2>How did you sleep last night?</h2></label>
-
+<h3>How are you feeling today?</h3>
             <div class="controls">
               <label class="checkbox">
-                <input type="checkbox" id="inlineCheckbox1" value="option1">I had a good night's sleep
+                <input type="checkbox" id="inlineCheckbox1" value="option1">I am feeling good today
               </label>
               <label class="checkbox">
-                <input type="checkbox" id="inlineCheckbox2" value="option2">I had trouble sleeping
+                <input type="checkbox" id="inlineCheckbox2" value="option2">I am so-so
               </label>
               <label class="checkbox">
-                <input type="checkbox" id="inlineCheckbox3" value="option3">I got very little sleep
+                <input type="checkbox" id="inlineCheckbox3" value="option3">I am not feeling well
               </label>
             </div>
           </div>
 
-          </div>
-          <div class="hero-unit">
-            <p>
-        <div class="control-group">
-            <label class="control-label" for="inlineCheckboxes"><h2>What are your plans for today?</h2></label>
+          <h3>Do you need anything today?</h3>
+          <div class="control-group">
             <div class="controls">
-              <label class="checkbox">
-                <input type="checkbox" id="inlineCheckbox1" value="option1">I am planning to run errands
-              </label>
-              <label class="checkbox">
-                <input type="checkbox" id="inlineCheckbox2" value="option2">I am planning to see family/friends
-              </label>
-              <label class="checkbox">
-                <input type="checkbox" id="inlineCheckbox3" value="option3">I will be busy at home
-              </label>
-              <label class="checkbox">
-                <input type="checkbox" id="inlineCheckbox4" value="option4">I don’t feel well enough to go anywhere
-              </label>
+                <textarea class="input-xlarge" id="textarea" rows="3"></textarea>                            
             </div>
           </div>
-            </p>
-          </div>
 
-          <div class="hero-unit">
-            <h2>Do you need anything today?</h2>
-
-        <div class="control-group">
-            <div class="controls">
-              <label class="checkbox">
-                <input type="checkbox" id="inlineCheckbox1" value="option1">I need a service consultation
-              </label>
-              <label class="checkbox">
-                <input type="checkbox" id="inlineCheckbox2" value="option2">I would like to sign up for a class
-              </label>
-              <label class="checkbox">
-                <input type="checkbox" id="inlineCheckbox3" value="option3">I would like the concierge to contact me
-              </label>
-            </div>
-          </div>
-          </div>
-          
-         <div class="hero-unit">
-            <h2>What movie won the Academy Award for Best Picture in 1937?</h2>
-
+        <h3>What movie won the Academy Award for Best Picture in 1937?</h3>
         <div class="control-group">
             <div class="controls">
               <label class="checkbox">
@@ -167,13 +126,13 @@
                 <input type="checkbox" id="inlineCheckbox4" value="option4">“Stage Door”
               </label>
             </div>
-          </div>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Save changes</button>
+            <button class="btn">Cancel</button>
+        </div>
 
-          </div>
-
-
- 
-
+          </div>         
       <hr>
 
       <footer>
@@ -182,7 +141,7 @@
 
     </div><!--/.fluid-container-->
 
-    <!-- Le javascript
+    <!-- javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
@@ -198,6 +157,6 @@
     <script src="assets/js/bootstrap-collapse.js"></script>
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
-
+    <script src="fisheye/fisheye.js"></script>
   </body>
 </html>

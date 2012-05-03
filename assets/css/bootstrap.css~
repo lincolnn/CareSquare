@@ -3003,7 +3003,7 @@ input[type="submit"].btn.btn-mini {
   float: none;
   padding: 10px 10px 11px;
   line-height: 19px;
-  color: #999999;
+  color: #395177;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -3627,6 +3627,9 @@ a.thumbnail:hover {
   text-decoration: none;
   cursor: pointer;
 }
+.badge-important {
+  background-color: #B94A48;
+}
 .badge-error {
   background-color: #b94a48;
 }
@@ -3955,7 +3958,7 @@ a.thumbnail:hover {
 }
 .hero-unit {
   padding: 20px;
-  margin-top:70px;
+  margin-top:0px;
   margin-bottom: 10px;
   background-color: #eeeeee;
   -webkit-border-radius: 6px;

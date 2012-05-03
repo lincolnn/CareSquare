@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CareSquare Dashboard</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Jquery first to avoid conflicts -->
+    <script src="{{STATIC_URL}}js/jquery.min.js"></script>
+
+    <!-- Styles -->
+    <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/font-awesome.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/menu.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/styles.css" rel="stylesheet">
+
+    <style type="text/css">
+      body {
+        padding-top: 100px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+    
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.ico">    
+
+  <title>CareSquare Home</title>
+  
+</head>
+
+<body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="index.html"><img src="{{ STATIC_URL }}img/EskatonLogo.png" /></a></li>  
+            </ul>
+            <p class="navbar-text pull-right">Logged in as <a href="#">SARAH</a></p>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header"><i class="icon-user"></i>Hello, SARAH</li>
+
+            <div class="alert">
+              <button class="close" data-dismiss="alert">×</button>
+              <strong>Checkin Due!</strong> Please do your daily checkin.
+            </div> 
+
+        <div class="fisheye">
+        <ul id="fisheye_menu">
+		        <li><a href="daily-checkin.html" class="fisheye"><img src="fisheye/images/tick.png" alt="" /><span>Check In Each Day</span></a></li> 
+		        <li><a href="request-a-ride.html" class="fisheye"><img src="fisheye/images/CarGrey.png" alt="" /><span>Request a Ride</span></a></li> 
+		        <li><a href="service-directory.html" class="fisheye"><img src="fisheye/images/info.png" alt="" /><span>Service Directory</span></a></li> 
+		        <li><a href="activity-calendar.html" class="fisheye"><img src="fisheye/images/calendar.png" alt="" /><span>Activity Calendar</span></a></li> 
+        </ul>
+        </div>
+             
+              <li class="nav-header"><a href="#">Request a Ride</a></li>
+              <li class="nav-header"><a href="#">Services</a></li>
+<li class="nav-header"><a href="#">Activities Calendar</a></li>
+            </ul>
+
+          </div><!--/.well -->
+        </div><!--/span-->
+
+        <div class="span6">
+        <div class="hero-unit">
+    <p>
+    "Your ride request was sent!"<br />
+    <a href="#">Return to Dashboard</a>
+    </p>
+
+
+        </div>
+
+    </div>
+
+ 
+  <!-- Javascript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="{{ STATIC_URL }}js/bootstrap-dropdown.js"></script>
+  <script src="{{ STATIC_URL }}js/bootstrap-modal.js"></script>
+  <script src="{{ STATIC_URL }}js/bootstrap-tab.js"></script>
+  <script src="{{ STATIC_URL }}js/bootstrap-alert.js"></script>
+  <script src="{{ STATIC_URL }}js/bootstrap-transition.js"></script>
+  <script src="{{ STATIC_URL }}js/bootstrap-tooltip.js"></script>
+
+</html>

@@ -4,7 +4,7 @@
  
 <head>
     <meta charset="utf-8" />
-    <link href="../../../media/css/style.css" rel="stylesheet">
+    <link href="media/css/style.css" rel="stylesheet">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/carousel.css" rel="stylesheet">
     <link href="images/favicon.ico" rel="shortcut icon">
@@ -15,15 +15,20 @@
  
 <div class="container">
     <div class="userauthentication">
-        {% if not user.is_authenticated %}<a href="/accounts/login/?next=/forum/">login</a> | <a
+        {% if not user.is_authenticated %}<a href="/accounts/login/?next=/contact/">login</a> | <a
             href="/accounts/register/">register</a>{% endif %}
 
-        {% if user.is_authenticated %}<a href="/accounts/logout/?next=/forum/">logout</a>
+        {% if user.is_authenticated %}<a href="/accounts/logout/?next=/contact/">logout</a>
             {% endif %}
     </div>
 
     <h1>CareSquare News</h1>
+
+    {% block content %}
+            <a href="/beers/">View the Members List</a>
+    {% endblock %}
     <hr />
+
     {% for post in posts %}
         <div class="post">
         <h2>{{ post.title }}</h2>

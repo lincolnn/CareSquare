@@ -8,14 +8,14 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
+    <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/FontAwesome/css/font-awesome.css" rel="stylesheet">
     <link href="fisheye/fisheye-menu.css" rel="stylesheet">
-    <!--<link href="fisheye/style.css" rel="stylesheet">-->
 
     <style type="text/css">
       body {
-        padding-top: 60px;
+        padding-top: 100px;
         padding-bottom: 40px;
       }
       .sidebar-nav {
@@ -40,18 +40,16 @@
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container-fluid">
+        <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">CareSquare Beta</a>
+
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="index.html"><img src="assets/img/EskatonLogo.png" /></a></li>  
             </ul>
             <p class="navbar-text pull-right">Logged in as <a href="#">SARAH</a></p>
           </div><!--/.nav-collapse -->
@@ -59,65 +57,66 @@
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container">
       <div class="row-fluid">
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header"><i class="icon-user"></i>SARAH</li>
+              <li class="nav-header"><i class="icon-user"></i>Hello, SARAH</li>
 
-    <div class="fisheye">
-    <ul id="fisheye_menu">
-		    <li><a href="daily-checkin.html" class="fisheye"><img src="fisheye/images/tick.png" alt="" /><span>Check In Each Day</span></a></li> 
-		    <li><a href="request-a-ride.html" class="fisheye"><img src="fisheye/images/CarGrey.png" alt="" /><span>Request a Ride</span></a></li> 
-		    <li><a href="service-directory.html" class="fisheye"><img src="fisheye/images/info.png" alt="" /><span>Service Directory</span></a></li> 
-		    <li><a href="activity-calendar.html" class="fisheye"><img src="fisheye/images/calendar.png" alt="" /><span>Activity Calendar</span></a></li> 
-    </ul>
-    </div>
-              <li class="nav-header"><i class="icon-list-alt"></i>Request a Ride</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="nav-header"><i class="icon-envelope"></i>Services</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-<li class="nav-header"><i class="icon-envelope"></i>Announcements</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+            <div class="alert">
+              <button class="close" data-dismiss="alert">×</button>
+              <strong>Checkin Due!</strong> Please do your daily checkin.
+            </div> 
+
+        <div class="fisheye">
+        <ul id="fisheye_menu">
+		        <li><a href="daily-checkin.html" class="fisheye"><img src="fisheye/images/tick.png" alt="" /><span>Check In Each Day</span></a></li> 
+		        <li><a href="request-a-ride.html" class="fisheye"><img src="fisheye/images/CarGrey.png" alt="" /><span>Request a Ride</span></a></li> 
+		        <li><a href="service-directory.html" class="fisheye"><img src="fisheye/images/info.png" alt="" /><span>Service Directory</span></a></li> 
+		        <li><a href="activity-calendar.html" class="fisheye"><img src="fisheye/images/calendar.png" alt="" /><span>Activity Calendar</span></a></li> 
+        </ul>
+        </div>
+             
+              <li class="nav-header"><a href="#">Request a Ride</a></li>
+              <li class="nav-header"><a href="#">Services</a></li>
+<li class="nav-header"><a href="#">Activities Calendar</a></li>
             </ul>
 
           </div><!--/.well -->
         </div><!--/span-->
 
-        <div class="span9">
-          <div class="hero-unit">
-            <h2>Today is Thursday, March 22, 2012</h2>
-            <p>Hello everyone! Looks like a rainy day today, there are some new yoga classes and Book Club meets at 2! Also Happy Birthday to Don who is 85 today! | <a href="#">Diana</a></p>
-            <p><a class="btn btn-primary btn-large" href="mailto:x@caresquare.com"><i class="icon-envelope"></i>Email Diana &raquo;</a></p>
-          </div>
-          
+        <div class="span6">
         <div class="hero-unit">
-            <h2>Today's Poll</h2>
-            <p><blockquote>Would you rather be a hammer or a nail?</blockquote></p>
+            <h3>How are you doing today?</h3>
 
-        <a class="btn btn-large btn-primary" href="#">
-          <i class="icon-align-left"></i>See Results</a>
+          <div class="control-group">
+            <div class="controls">
+                <textarea class="input-xlarge" id="textarea" rows="1"></textarea>                            
+            </div>
+<a class="btn btn-primary btn-medium" href="#">Update &raquo;</a>
           </div>
+        </div>
 
           <div class="hero-unit">
-            <h2>Announcements</h2>
-            <p><blockquote>New Class added: Yoga on Thursday Mornings Tax Prep class is almost full! What do you think of a cooking class? Email Diana!</blockquote></p>
-            <p><blockquote>Tax Prep class is almost full!</blockquote></p>
-            <p><blockquote>What do you think of a cooking class? Email Diana!</blockquote></p>
-            <p><blockquote>Dean is back from his India trip - hear about it on 
-Wednesday at 3pm!</blockquote></p>
-        <a class="btn btn-large btn-primary" href="#">
-          <i class="icon-comment"></i>Do you have an announcement? Email Diana!
-</a>
+            <h2>Thursday, March 22, 2012</h2>
+            <img src="assets/img/diana.png" /><p>Hello everyone! Looks like a rainy day today, there are some new yoga classes and Book Club meets at 2! Also Happy Birthday to Don who is 85 today! ~ Diana</p>
           </div>
 
-         
-         
-
+        <div class="hero-unit">
+            <h2>What movie won the Academy Award for Best Picture in 1937?</h2>
+            <p>              
+                <form class="form-horizontal">
+                    <input type="checkbox" id="optionsCheckbox" value="hammer">"The Awful Truth"<br/>
+                    <input type="checkbox" id="optionsCheckbox" value="nail">"Captains Courageous"<br/>
+                    <input type="checkbox" id="optionsCheckbox" value="nail">"The Life of Emile Zola"<br/>
+                    <input type="checkbox" id="optionsCheckbox" value="nail">"Stage Door"<br/>
+                </form>
+            </p>
+        <a class="btn btn-medium btn-primary" href="#">
+          <i class="icon-align-left"></i>Answer</a>
+          </div>    
+   
       <hr>
 
       <footer>
@@ -126,7 +125,41 @@ Wednesday at 3pm!</blockquote></p>
 
     </div><!--/.fluid-container-->
 
-    <!-- Le javascript
+    <div class="span3">
+        <div class="hero-unit">
+        <h4>How are you feeling today?</h4>
+          <p>
+            <button class="btn btn-success">Good</button>
+            <button class="btn btn-warning">So So</button>
+            <button class="btn btn-danger">Bad</button>
+          </p>
+        </div>
+        
+        <div class="hero-unit">
+        <h4>Take a class, try something New, find out more...</h4>
+          <p>
+            <a class="btn btn-primary btn-large">
+              <i class="icon-calendar"></i>Activities Calendar
+            </a>
+          </p>
+        </div>
+
+        <div class="hero-unit">
+        <h4>Today's Poll</h4>
+            <p>Would you rather be a hammer or a nail?                
+                            <form class="form-horizontal">
+                                <input type="checkbox" id="optionsCheckbox" value="hammer">Hammer<br/>
+                                <input type="checkbox" id="optionsCheckbox" value="nail">Nail<br/>
+                            </form>
+                        </p>
+                    <a class="btn btn-large btn-primary" href="#">
+                      <i class="icon-align-left"></i>Submit & See Results</a>
+            </p>
+        </div>
+
+    </div>
+
+    <!-- javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>

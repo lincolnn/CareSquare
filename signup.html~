@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>CareArchitecture Sign Up Form</title>
+    <title>Care Architecture - About Us</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -11,8 +11,12 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Style (aka, calling Bootstrap) -->
-    <link href="bootstrap-1.1.1.css" rel="stylesheet">
+    <!-- Styles -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!--<link href="bootstrap-1.1.1.css" rel="stylesheet">-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/carousel.css" rel="stylesheet">
+
 
     <!-- Fav and touch icons -->
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -20,40 +24,43 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
     
-    <!-- Scripts, inc. TableSorter -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="assets/js/jquery.tools.min.js"></script>
-    <script src="http://autobahn.tablesorter.com/jquery.tablesorter.min.js"></script>
-    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- Scripts: inc. TableSorter -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/jquery.tablesorter/jquery.tablesorter.js"></script>
+    <!--<script src="http://autobahn.tablesorter.com/jquery.tablesorter.min.js"></script>-->
+    <script src="assets/js/prettify.js"></script>
     <script src="assets/js/application.js"></script>
-    <script src="assets/js/forms.js"></script>
-
   </head>
 
   <body>
-
-    <!-- Top Navigation -->
-   <div class="topbar">
-    <div class="fill">
-        <div class="container">
-            <h3><a href="index.html">CareSquare Beta</a></h3>
-            <ul>
-                <li class="active"><a href="#">Home</a></li>
+    <!-- The top navigation menu -->
+   <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <ul class="nav">
+                <li><a href="index.html"><img src="assets/img/EskatonLogo.png" /></a></li>
+                <!--<li><a href="about.html">About Us</a></li>
                 <li><a href="request-a-ride.html">Services</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Contact Us</a></li>-->
           </ul>
-          <form action="">
-            <input type="text" placeholder="Search" />
-          </form>
-          <ul class="nav secondary-nav">
+          <ul class="nav pull-right">
+            <li><a href="signup.html" class="">Signup</a><li>
             <li class="menu">
-                <a href="#" class="menu">Login</a>
-                <ul class="menu-dropdown">
-                    <li><a href="#">Dolor sit</a></li>
-                    <li><a href="#">Amet Consequeter</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Enough with the Latin</a></li>
+                <a href="mm1-view.html" class="dropdown-toggle" data-toggle="dropdown">
+                          Login
+                          <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+		            <form action="mm1-view.html" method="post">
+			            <div class="formLine"><input class="textInput" type="text" name="username" placeholder="Username" /></div>
+			            <div class="formLine"><input class="textInput" type="password" name="password" placeholder="Password"/></div>
+			            <div class="formLine"><input class="vui-button" type="submit" name="submit" value="Login" style="float: right;"/><input type="checkbox" name="remember" id="remember"> <label for="remember">Remember me</label></div>
+			            <div class="formLine" style="text-align: center;"><a style="color: #bbb;" href="#">I forgot my password</a></div>
+		            </form>
                 </ul>
             </li>
           </ul>
@@ -61,7 +68,7 @@
     </div>
 </div>
 
-    <div class="container">
+    <div class="container-fluid">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
@@ -71,8 +78,8 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="span11">
-<!-- An exemplar signup form -->
-<form>
+            <!-- An exemplar signup form -->
+            <form>
                 <fieldset>
                     <div class="clearfix">
                         <label>New Password:</label>
@@ -81,7 +88,7 @@
                         </div>
                     </div>
                     <div class="clearfix">
-                        <label>Retype</label>
+                        <label>Retype:</label>
                         <div class="input">
                             <input class="xlarge" type="text" />
                         </div>
@@ -90,55 +97,16 @@
                     <div class="clearfix error">
                         <label>Email address</label>
                         <div class="input">
-                            <input class="error" type="text" value="streeter%betsy.com" />
-                            <span class="help-inline">That is not a valid e-mail address</span>
+                            <input class="xlarge" type="text" />
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>Username:</label>
+                        <div class="input">
+                            <input class="xlarge" type="text" />
                         </div>
                     </div>
 
-                    <div class="clearfix">
-                        <label>Profile Picture</label>
-                        <div class="input">
-                            <input type="file" class="input-file" />
-                        </div>
-                    </div>
-                    <div class="clearfix">
-                        <label>Industry</label>
-                        <div class="input">
-                            <select class="medium">
-                                <option>Care Coordination</option>
-                                <option>Assisted Living</option>
-                                <option>Independent Living</option>
-                                <option>Skilled Nursing</option>
-                                <option>Home Healthcare</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="clearfix">
-                        <label>Description</label>
-                        <div class="input">
-                            <textarea></textarea>
-                            <span class="help-block">Just a small bit about yourself</span>
-                        </div>
-                    </div>
-                    <div class="clearfix">
-                        <label>Agreements</label>
-                        <div class="input">
-                            <ul class="inputs-list">
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        I accept the terms and conditions
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        I accept the privacy agreement
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                     <div class="actions">
                         <button class="btn primary">Done!</button>
                     </div>
@@ -147,19 +115,7 @@
 
         </div>
 
-<!-- The second column -->
-        <div class="span5">
-          <h2>Why You'll Love CareArchitecture</h2>
 
-<ul class="tabs">
-  <li class="active"><a href="#">Your Coordinator</a></li>
-  <li><a href="#">Ipsum</a></li>
-  <li><a href="#">Dolor</a></li>
-</ul>
-<p><img src="images/caregiver_1.png"></img>
-Aenean tempor vulputate ipsum tempus elementum. Sed sit amet ligula nulla, non molestie lectus. Quisque felis lectus, pharetra dapibus semper id, vulputate sed ipsum. Pellentesque tincidunt pulvinar rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-</p>
-       </div>
       </div>
 
 <!-- Footer -->

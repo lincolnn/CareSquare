@@ -1,0 +1,195 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-03 13:41+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: .\admin.py:19
+msgid "Options"
+msgstr "Опции"
+
+#: .\models.py:17
+msgid "Title"
+msgstr "Заголовок"
+
+#: .\models.py:17
+msgid "The parameter is used as question to user"
+msgstr "Параметр используется как заголовок вопроса к пользователю"
+
+#: .\models.py:18 .\models.py:71
+msgid "Queue"
+msgstr "Очередь"
+
+#: .\models.py:18
+msgid ""
+"Do you want to use the poll as a stand alone poll or insert it into the "
+"queue?"
+msgstr ""
+"Вы хотите использовать опрос как отдельностоящий опрос или вставить его в "
+"очередь?"
+
+#: .\models.py:19
+msgid "Poll type"
+msgstr "Тип опроса"
+
+#: .\models.py:19
+msgid "Choose the poll type"
+msgstr "Выберете тип опроса"
+
+#: .\models.py:20
+msgid "Start date"
+msgstr "Дата старта"
+
+#: .\models.py:20
+msgid "Must be unique"
+msgstr "Должен быть уникальным"
+
+#: .\models.py:21
+msgid "Publish"
+msgstr "Публиковать"
+
+#: .\models.py:22 .\models.py:100
+msgid "Votes"
+msgstr "Голоса"
+
+#: .\models.py:22
+msgid "Choose variants of answers"
+msgstr "Выберете варианты ответов"
+
+#: .\models.py:29
+msgid "\"Start dates\" of polls in the same queue must be different"
+msgstr ""
+"Параметры \"Start dates\" у разных опросов в одной очереди должны быть "
+"отличны"
+
+#: .\models.py:54 .\models.py:87 .\templates\polls.html.py:22
+msgid "Poll"
+msgstr "Опрос"
+
+#: .\models.py:55
+msgid "Polls"
+msgstr "Опросы"
+
+#: .\models.py:58
+msgid "Queue name"
+msgstr "Название очереди"
+
+#: .\models.py:58
+msgid "It must be unique"
+msgstr "Должен быть уникальным"
+
+#: .\models.py:59
+msgid "Need auth?"
+msgstr "Нужна аутентификация?"
+
+#: .\models.py:59
+msgid ""
+"Do the poll queue is for authenticated users only or not? (If yes, users "
+"must have \"can_vote\" permission to vote)"
+msgstr ""
+"Очередь опросов только для аутентифицированных пользователей или нет? (Иначе "
+"у пользователя должен быть доступ \"can_vote\")"
+
+#: .\models.py:63
+msgid "With auth"
+msgstr "С авторизацией"
+
+#: .\models.py:65
+msgid "Without auth"
+msgstr "Без авторизации"
+
+#: .\models.py:72
+msgid "Queues"
+msgstr "Очереди"
+
+#: .\models.py:76
+msgid "Its userbox?"
+msgstr "Это пользовательский ввод?"
+
+#: .\models.py:76
+msgid "Set it, if you want user to type its own answer. (show as textbox)"
+msgstr ""
+"Выберете это, если вы хотите что бы пользователь сам напечатал свой ответ "
+"(вывод textbox)"
+
+#: .\models.py:77
+msgid "Value"
+msgstr "Значение"
+
+#: .\models.py:77
+msgid "Its a title of item"
+msgstr "Заголовок item"
+
+#: .\models.py:78
+msgid "Position"
+msgstr "Позиция"
+
+#: .\models.py:78
+msgid "Its for positioning only"
+msgstr "Только для позиционирования"
+
+#: .\models.py:88
+msgid "User's IP"
+msgstr "IP пользователя"
+
+#: .\models.py:89 .\templates\polls.html.py:25
+msgid "User"
+msgstr "Пользователь"
+
+#: .\models.py:91
+msgid "Voited items"
+msgstr "Голосовавшие items"
+
+#: .\models.py:99 .\templates\polls.html.py:34
+msgid "Vote"
+msgstr "Голос"
+
+#: .\templates\polls.html.py:8
+msgid "Total Voters"
+msgstr "Всего"
+
+#: .\templates\polls.html.py:9
+msgid "Please, choose anything to vote"
+msgstr "Пожалуйста выберете что-нибудь чтобы проголосовать"
+
+#: .\templates\polls.html.py:10
+msgid "Only authenticated users can vote"
+msgstr "Только авторизированные пользователи могут голосовать"
+
+#: .\templates\polls.html.py:17
+msgid ""
+"WARNING: JavaScript is disabled in your browser. Please, turn it on to vote."
+msgstr ""
+"JavaScript отключен в вашем браузере. Вы должны включить его, чтобы "
+"проголосовать."
+
+#: .\templates\polls.html.py:30
+msgid "You already voted"
+msgstr "Вы уже проголосовали"
+
+#: .\templates\polls.html.py:31
+msgid "Show results"
+msgstr "Показать результаты"
+
+#: .\templates\polls.html.py:40
+msgid ""
+"WARNING: Cookies are disabled in your browser. Please, turn it on to vote."
+msgstr ""
+"Cookies отключены в вашем браузере. Вы должны включить их, чтобы "
+"проголосовать."
+

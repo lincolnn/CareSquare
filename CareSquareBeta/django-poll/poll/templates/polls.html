@@ -1,0 +1,44 @@
+{% load i18n %}
+{% load polls_tags %}
+
+<style type="text/css">
+	{% include "_polls_style.css" %}
+</style>
+<script type="text/javascript">
+	trans_total_voters = '{% trans "Total Voters" %}';
+	trans_choose_anything_to_vote = '{% trans "Please, choose anything to vote" %}';
+	trans_only_authenticated_users_can_vote = '{% trans "Only authenticated users can vote" %}';
+	{% include "_polls_script.js" %}
+</script>
+
+<div class="dps_poll_content_{{ poll.pk }}">
+	<p class="dps_poll_warning_message">
+		<noscript>		
+			{% trans "WARNING: JavaScript is disabled in your browser. Please, turn it on to vote." %}
+		</noscript>
+	</p>
+	<form method="post">
+		{% csrf_token %}
+		<h1 class="dps_poll_content_header"><span class="dps_poll_title">{% trans "Poll" %}:</span> {{ poll.title }}</h1>
+		{% if user.is_authenticated %}
+		<div class="dps_poll_userspace">
+			{% trans "User" %}: {{ user }}
+		</div>
+		{% endif %} 
+		<div class="dps_poll_body">
+			{% if poll.get_cookie_name in request.COOKIES %}
+				<p>{% trans "You already voted" %}.</p>
+				<p><a class="dps_showresults_{{ poll.pk }}" href="javascript:void(0);">{% trans "Show results" %}</a></p>
+			{% else %}
+				{% render_items poll items %}
+				<p><input class="dps_sendvote_{{ poll.pk }}" type="button" value="{% trans "Vote" %}" /></p>
+			{% endif %}
+		</div>
+	</form>
+	<script type="text/javascript">
+		if(!navigator.cookieEnabled) {
+			$('.dps_poll_content_{{ poll.pk }} .dps_poll_warning_message').append('{% trans "WARNING: Cookies are disabled in your browser. Please, turn it on to vote." %}');
+			$('.dps_sendvote_{{ poll.pk }}').attr('disabled', '');
+		}
+	</script>
+</div>

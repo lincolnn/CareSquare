@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div id="memberslist">
+        <a href="/members/">View the Members List</a>
+        {% for member in members %}
+        <p><a hef="/members/{{ member.slug }}/">{{ member }}</p>
+        {% endfor %}
+    </div>
+{% endblock %}

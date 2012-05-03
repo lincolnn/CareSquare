@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Member Square One</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/FontAwesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../fisheye/fisheye-menu.css" rel="stylesheet">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+    <style type="text/css">
+      body {
+        padding-top: 100px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+        .control-label {
+            float: left;
+            width: 179px;
+            padding-top: 5px;
+            text-align: left;
+        }
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="home.html"><img src="../assets/img/EskatonLogo.png" /></a></li>  
+            </ul>
+            <p class="navbar-text pull-right">Logged in as <a href="#">Care Coordinator</a></p>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header"><i class="icon-user"></i>Hello, SARAH</li>
+              <li class="nav-header"><a href="members-list.html">Members List</a></li>
+              <li class="nav-header"><a href="#">Request A Ride</a></li>
+              <li class="nav-header"><a href="#">Services</a></li>
+              <li class="nav-header"><a href="#">Activities Calendar</a></li>
+            </ul>
+            
+
+          </div><!--/.well -->
+        </div><!--/span-->
+
+        <div class="span9">
+
+          <div class="hero-unit">
+
+<form class="form-horizontal">
+  <fieldset>
+    <legend>Request a Ride</legend>
+
+          <div class="control-group">
+            <label class="control-label" for="select01">Who do you need a ride for?</label>
+            <div class="controls">
+              <select id="select01">
+                <option>Sarah Johnson</option>
+                <option>Ben Stephenson</option>
+                <option>Ronda Rousey</option>
+                <option>Christiano Santos</option>
+              </select>
+            </div>
+          </div>
+
+    <div class="control-group">
+      <label class="control-label" for="input01">What day do you need a ride?</label>
+
+    <div class="controls">
+
+        <input type="text" id="datepicker">
+
+    </div><!-- End demo -->
+    </div>
+
+          <div class="control-group">
+            <label class="control-label" for="textarea">Where  would  you  like  to  go?  Any  special  needs?</label>
+            <div class="controls">
+              <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="select01">What time do you need to be picked up?</label>
+            <div class="controls">
+              <select id="select01">
+                <option>12:00PM</option>
+                <option>1:00 PM</option>
+                <option>2:00 PM</option>
+                <option>3:00 PM</option>
+                <option>4:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="select01">How long a trip do you anticipate?</label>
+            <div class="controls">
+              <select id="select01">
+                <option>1 hour</option>
+                <option>2 hours</option>
+                <option>3 hours</option>
+                <option>4 hours</option>
+                <option>5 hours</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="textarea">Please type any special needs, notes, or preferred driver:</label>
+            <div class="controls">
+              <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+            </div>
+          </div>
+
+            <div class="control-group">
+                <label class="checkbox">
+                    <input type="checkbox"> I would like the driver to wait
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox"> I would like the driver to come back and pick them up
+                </label>
+            </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send Request</button>
+            <button class="btn">Cancel</button>
+          </div>
+
+  </fieldset>
+</form>
+          </div>
+               
+      <hr>
+
+      <footer>
+        <p>&copy; CareArchitecture 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script src="../fisheye/fisheye.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script src="../assets/js/datepicker.js"></script>
+  </body>
+</html>

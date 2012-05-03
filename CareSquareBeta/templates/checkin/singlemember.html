@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div id="singlebeer">
+        <p>Name: {{ member }}</p>
+        <p>Age: {{member.age }}</p>
+        <p>Last Checkin: {{member.lastcheckin }}</p>
+    </div>
+{% endblock %}

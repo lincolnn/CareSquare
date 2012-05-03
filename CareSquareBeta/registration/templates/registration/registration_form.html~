@@ -1,15 +1,3 @@
-{% extends "base.html" %}
-{% load i18n %}
-
-{% block content %}
-<form method="post" action=".">{% csrf_token %} 
-  {{ form.as_p }}
-
-  <input type="submit" value="{% trans 'Submit' %}" />
-</form>
-{% endblock %}
-
-
 <html>
     <head>
         <title>Register</title>
@@ -26,3 +14,16 @@
         </form>
     </body>
 </html>
+
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<form method="post" action=".">{% csrf_token %} 
+  {{ form.as_p }}
+
+  <input type="submit" value="{% trans 'Submit' %}" />
+</form>
+{% endblock %}
+
+
